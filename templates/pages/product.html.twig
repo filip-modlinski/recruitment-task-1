@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Produkt
+{% endblock %}
+
+{% block body %}
+    <h1>{{ 'Nowy produkt' }}</h1>
+
+    {{ form_start(form) }}
+    {{ form_row(form.productName) }}
+    {{ form_row(form.codeName) }}
+    {{ form_row(form.productCode) }}
+    {{ form_row(form.unitPrice) }}
+    {{ form_row(form.productDescription) }}
+    {{ form_row(form.category) }}
+    {{ form_end(form) }}
+{% endblock %}
